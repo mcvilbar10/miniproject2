@@ -17,7 +17,7 @@ const Employees = () => {
           width="auto"
         >
             <ColumnsDirective>
-              {employeesGrid.map((item,index)=>(<ColumnDirective key={index}{...item} />))}))}
+              {employeesGrid.map((item,index)=>(<ColumnDirective key={index}{...item} />))}
             </ColumnsDirective>
             <Inject service={[Page, Search, Toolbar]} />
         </GridComponent>
